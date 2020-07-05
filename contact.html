@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Steven Charles">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact me</title>
+	<link rel="stylesheet" type="text/css" href="./src/style.css">
+	<link rel="stylesheet" type="text/css" href="./src/style2.css">
+
+	
+</head>
+<body>
+	<header>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="pageLinks">
+			<button class="page" onclick="location.href='index.html'" type="button"><p>About</p></button> 
+			<button class="page" onclick="location.href='project.html'" type="button"><p>Projects</p></button> 
+			<button class="page active" type="button"><p>Contacts</p></button> 
+		</div>
+	</header>
+	<content>
+		<div class="mainContainer">
+			<div class="mainForm-box">
+				
+				<div class="title"><h1 class="word">CONTACT ME</h1></div>
+				<form class="form-box" action="./src/send.php" method="POST">
+					<h4 id="errorMessage"></h4>
+					<label for="name"><b>NAME: </b></label>
+					<input id="name" placeholder="Enter name" type="text" name="name">
+
+					<label for="email"><b>E-MAIL: </b></label>
+					<input id="email" placeholder="Enter E-mail" type="email" name="email">
+
+					<label for="subject"><b>SUBJECT: </b></label>
+					<input id="subject" placeholder="Enter Subject" type="text" name="subject">
+
+					<label for="message"><b>MESSAGE: </b></label>
+					<textarea id="message" placeholder="Enter Message here" name="message"></textarea>
+
+					<button type="submit" name="submit" id="submitButton"><p>SEND</p></button>
+				</form>
+			</div>			
+		</div>
+	</content>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="./src/send.js"></script>
+</body>
+</html>

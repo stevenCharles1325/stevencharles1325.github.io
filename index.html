@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Steven Charles">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Steve Charles</title>
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="pageLinks">
+			<button class="page active" type="button"><p>About</p></button> 
+			<button class="page" onclick="location.href='project.html'" type="button"><p>Projects</p></button> 
+			<button class="page" onclick="location.href='contact.html'" type="button"><p>Contacts</p></button> 
+		</div>
+	</header>
+	<content>
+		<div class="main-box">
+			<div class="inner-box">
+				<div class="linkBox">
+					<div class="photoSection">
+						<div class="imageContainer">
+							<img src="image/stevencharles.jpg" id="myid">
+							<div id="name-display"><b>Steven<br/>Charles</b></div>
+						</div>
+						<h4 id="boxName">Steven Charles</h4>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>		
+						<h2 style="letter-spacing: 2px;"><b>IT Student</b></h2>
+					</div>
+					<div class="icon-bar">
+							<a href="https://gmail.com/stevencharles1325@gmail.com"><img class="icons" src="icon/email-icon.png"></a>
+							<a href="#"><img class="icons" src="icon/contact-icon.png"></a>
+							<a href="https://www.facebook.com/weirdo.palabyab"><img class="icons" src="icon/facebook-icon.png"></a>
+							<a href="https://github.com/stevenCharles1325"><img class="icons" src="icon/github-icon.png"></a>
+							<a href="https://www.linkedin.com/in/steven-charles-12b4601b0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYeCvCxMiSfiCkOrexNDlHw%3D%3D"><img class="icons" src="icon/linkedin-icon.png"></a>
+					</div>
+				</div>
+				<div class="bio">
+					<div class="introBox">
+						<h1>GoodDay</h1>
+						<h3>I am Steven Charles Palabyab an IT Student</h3>
+						<p>Hi, I am Steven Charles P. Palabyab, I am 20 years old from Tagaytay City Philippines. Currently a 3rd BSIT student. I took this course because of my passion in programming that it really excites me when I am dealing with a task related to programming especially when I face some errors that I can eventually came up with a brilliant solution. A hardworking person since I hate the feeling of getting the job unfinished. I can assure you that when I start something I will do my very best to finish it. I know life is hard so slacking off is a huge mistake. I have a lot of experience in Python, Java, C++, HTML, CSS, but still I know that I need to learn more.</p>
+						<a href="no-script.html" download="stevenresume.docx" id="resume-btn"><div class="dot"></div>RESUME</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</content>
+	<script type="text/javascript" src="./src/active.js"></script>
+	<script>
+		$(document).ready(function(e){
+			$("#resume-btn").click(function(e){
+				e.preventDefault();
+				window.location.href = "https://drive.google.com/u/0/uc?id=12nj7uO5ZvP5Wotcy2SVI3rylgCbRZ-yT&export=download";
+			});
+		});
+
+	</script>
+</body>
+</html>
